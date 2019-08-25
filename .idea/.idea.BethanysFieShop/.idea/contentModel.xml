@@ -17,6 +17,7 @@
       </e>
       <e p="Models" t="Include">
         <e p="AppDbContext.cs" t="Include" />
+        <e p="DbInitilizer.cs" t="Include" />
         <e p="IPieRepository.cs" t="Include" />
         <e p="MockPieRepository.cs" t="Include" />
         <e p="Pie.cs" t="Include" />
