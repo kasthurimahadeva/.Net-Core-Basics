@@ -5,25 +5,27 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using BethanysFieShop.Models;
+using BethanysFieShop.ViewModels;
 
 namespace BethanysFieShop.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly IPieRepository _pieRepository;
+        public HomeController(IPieRepository pieRepository)
+        {
+            _pieRepository = pieRepository;
+        }
+
         public IActionResult Index()
         {
-            return View();
-        }
-
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel {RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier});
+            var pies = _pieRepository.GetAllPies().OrderBy(p => p.Name);
+            var homeViewModel = new HomeViewModel()
+            {
+                Title = "Welcome to Bethany's Pie Shop",
+                Pies = pies.ToList()
+            };
+            return View(homeViewModel);
         }
     }
 }
