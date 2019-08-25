@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using BethanysFieShop.Models;
+using BethanysFieShop.ViewModels;
 
 namespace BethanysFieShop.Controllers
 {
@@ -18,7 +19,13 @@ namespace BethanysFieShop.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            var pies = _pieRepository.GetAllPies().OrderBy(p => p.Name);
+            var homeViewModel = new HomeViewModel()
+            {
+                Title = "Welcome to Bethany's Pie Shop",
+                Pies = pies.ToList()
+            };
+            return View(homeViewModel);
         }
 
         public IActionResult Privacy()

@@ -1,8 +1,10 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿@model HomeViewModel
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<h2>@Model.Title</h2>
+@foreach (var pie in Model.Pies)
+{
+    <div>
+        <h3>@pie.Name</h3>
+        <p>@pie.Price.ToString("c")</p>
+    </div>
+}

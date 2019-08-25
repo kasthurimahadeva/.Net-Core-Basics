@@ -21,6 +21,9 @@
         <e p="launchSettings.json" t="Include" />
       </e>
       <e p="Startup.cs" t="Include" />
+      <e p="ViewModels" t="Include">
+        <e p="HomeViewModel.cs" t="Include" />
+      </e>
       <e p="Views" t="Include">
         <e p="Home" t="Include">
           <e p="Index.cshtml" t="Include" />
