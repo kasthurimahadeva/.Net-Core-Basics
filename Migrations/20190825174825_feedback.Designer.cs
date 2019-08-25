@@ -43,7 +43,7 @@ namespace BethanysFieShop.Migrations
                     b.ToTable("Pies");
                 });
 
-            modelBuilder.Entity("BethanysPieShop.Models.Feedback", b =>
+            modelBuilder.Entity("BethanysFieShop.Models.Feedback", b =>
                 {
                     b.Property<int>("FeedbackId")
                         .ValueGeneratedOnAdd();
