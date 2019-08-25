@@ -13,6 +13,8 @@
       <e p="Migrations" t="Include">
         <e p="20190825120616_InitialCreate.Designer.cs" t="Include" />
         <e p="20190825120616_InitialCreate.cs" t="Include" />
+        <e p="20190825151327_newColumn.Designer.cs" t="Include" />
+        <e p="20190825151327_newColumn.cs" t="Include" />
         <e p="AppDbContextModelSnapshot.cs" t="Include" />
       </e>
       <e p="Models" t="Include">
