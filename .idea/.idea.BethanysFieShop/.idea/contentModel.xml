@@ -5,6 +5,25 @@
     <e p="$USER_HOME$/.Rider2019.2/system/resharper-host/local/Transient/ReSharperHost/v192/SolutionCaches/_BethanysFieShop.234651553.00" t="ExcludeRecursive" />
     <e p="$PROJECT_DIR$" t="IncludeRecursive">
       <e p=".gitignore" t="Include" />
+      <e p="Areas" t="Include">
+        <e p="Identity" t="Include">
+          <e p="IdentityHostingStartup.cs" t="Include" />
+          <e p="Pages" t="Include">
+            <e p="Account" t="Include">
+              <e p="Login.cshtml" t="Include" />
+              <e p="Login.cshtml.cs" t="Include" />
+              <e p="Logout.cshtml" t="Include" />
+              <e p="Logout.cshtml.cs" t="Include" />
+              <e p="Register.cshtml" t="Include" />
+              <e p="Register.cshtml.cs" t="Include" />
+              <e p="_ViewImports.cshtml" t="Include" />
+            </e>
+            <e p="_ValidationScriptsPartial.cshtml" t="Include" />
+            <e p="_ViewImports.cshtml" t="Include" />
+            <e p="_ViewStart.cshtml" t="Include" />
+          </e>
+        </e>
+      </e>
       <e p="BethanysFieShop.csproj" t="IncludeRecursive" />
       <e p="BethanysFieShop.sln" t="IncludeFlat" />
       <e p="Controllers" t="Include">
@@ -18,6 +37,8 @@
         <e p="20190825151327_newColumn.cs" t="Include" />
         <e p="20190825174825_feedback.Designer.cs" t="Include" />
         <e p="20190825174825_feedback.cs" t="Include" />
+        <e p="20190825185628_IdentityAdded.Designer.cs" t="Include" />
+        <e p="20190825185628_IdentityAdded.cs" t="Include" />
         <e p="AppDbContextModelSnapshot.cs" t="Include" />
       </e>
       <e p="Models" t="Include">
@@ -50,6 +71,7 @@
         </e>
         <e p="Shared" t="Include">
           <e p="_Layout.cshtml" t="Include" />
+          <e p="_LoginPartial.cshtml" t="Include" />
         </e>
         <e p="_ViewImports.cshtml" t="Include" />
         <e p="_ViewStart.cshtml" t="Include" />
