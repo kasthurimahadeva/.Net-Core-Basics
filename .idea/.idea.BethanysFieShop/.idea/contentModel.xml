@@ -18,6 +18,8 @@
         <e p="20190825151327_newColumn.cs" t="Include" />
         <e p="20190825174825_feedback.Designer.cs" t="Include" />
         <e p="20190825174825_feedback.cs" t="Include" />
+        <e p="20190825185628_IdentityAdded.Designer.cs" t="Include" />
+        <e p="20190825185628_IdentityAdded.cs" t="Include" />
         <e p="AppDbContextModelSnapshot.cs" t="Include" />
       </e>
       <e p="Models" t="Include">
