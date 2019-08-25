@@ -35,6 +35,7 @@
       </e>
       <e p="Views" t="Include">
         <e p="Home" t="Include">
+          <e p="Details.cshtml" t="Include" />
           <e p="Index.cshtml" t="Include" />
         </e>
         <e p="Shared" t="Include">
