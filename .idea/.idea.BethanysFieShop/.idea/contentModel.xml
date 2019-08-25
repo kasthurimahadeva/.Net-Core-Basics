@@ -8,6 +8,7 @@
       <e p="BethanysFieShop.csproj" t="IncludeRecursive" />
       <e p="BethanysFieShop.sln" t="IncludeFlat" />
       <e p="Controllers" t="Include">
+        <e p="FeedbackController.cs" t="Include" />
         <e p="HomeController.cs" t="Include" />
       </e>
       <e p="Migrations" t="Include">
@@ -15,11 +16,16 @@
         <e p="20190825120616_InitialCreate.cs" t="Include" />
         <e p="20190825151327_newColumn.Designer.cs" t="Include" />
         <e p="20190825151327_newColumn.cs" t="Include" />
+        <e p="20190825174825_feedback.Designer.cs" t="Include" />
+        <e p="20190825174825_feedback.cs" t="Include" />
         <e p="AppDbContextModelSnapshot.cs" t="Include" />
       </e>
       <e p="Models" t="Include">
         <e p="AppDbContext.cs" t="Include" />
         <e p="DbInitilizer.cs" t="Include" />
+        <e p="Feedback.cs" t="Include" />
+        <e p="FeedbackRepository.cs" t="Include" />
+        <e p="IFeedbackRepository.cs" t="Include" />
         <e p="IPieRepository.cs" t="Include" />
         <e p="MockPieRepository.cs" t="Include" />
         <e p="Pie.cs" t="Include" />
@@ -34,6 +40,10 @@
         <e p="HomeViewModel.cs" t="Include" />
       </e>
       <e p="Views" t="Include">
+        <e p="Feedback" t="Include">
+          <e p="FeedbackComplete.cshtml" t="Include" />
+          <e p="index.cshtml" t="Include" />
+        </e>
         <e p="Home" t="Include">
           <e p="Details.cshtml" t="Include" />
           <e p="Index.cshtml" t="Include" />
