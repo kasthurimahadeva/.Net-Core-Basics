@@ -43,7 +43,6 @@ namespace BethanysFieShop
             // Automatically perform database migration
             services.BuildServiceProvider().GetService<AppDbContext>().Database.Migrate();
 
-            services.AddDbContext<AppDbContext>(options => options.UseSqlite(Configuration.GetConnectionString("DefaultConnection")));
             services.AddTransient<IPieRepository, PieRepository>();
             services.AddTransient<IFeedbackRepository, FeedbackRepository>();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
