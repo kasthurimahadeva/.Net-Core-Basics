@@ -6,6 +6,7 @@ namespace BethanysFieShop.Models
 	{
 		public static void Seed(AppDbContext context)
 		{
+			context.Database.EnsureCreated();
 			if (!context.Pies.Any())
 			{
 				context.AddRange
